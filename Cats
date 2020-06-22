@@ -1,0 +1,9 @@
+Owner can have many cats
+Cats can only have one owner
+
+Incorrect
+PUT cat/{:ownerid}
+
+Correct
+PUT owner/{:ownerid}/cat
+

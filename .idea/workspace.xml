@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5ba327f-3a12-48a0-a6c2-7c5575e744c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cats" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDecisions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README_ANSWERS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbscripts/V0__setup.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbscripts/V1__data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intellij-java-google-style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/calc/Collatz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/database/DBJooqWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/database/DatasourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/RestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/DeleteAllHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/DeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/GetAllHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/GetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/PutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/PersistentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/task/RunnableCollatzTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/task/RunnablePersistentCollatzTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/collatz/CollatzTail.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/collatz/dotproduct/DotProduct.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/CollatzTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/RestControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/collatz/CollatzTailTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/collatz/dotproduct/DotProductTest.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dgKGvaHnSLRJCcwyQQtSny8qGt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk-11.0.7" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5ba327f-3a12-48a0-a6c2-7c5575e744c6" name="Default Changelist" comment="" />
+      <created>1592841206652</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592841206652</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="61" key="FileChooserDialogImpl" timestamp="1592842141016">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="61" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592842141016" />
+    <state x="294" y="145" key="com.intellij.ide.util.TipDialog" timestamp="1592841229516">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="294" y="145" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592841229516" />
+  </component>
+</project>

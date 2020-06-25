@@ -1,8 +1,0 @@
-//TODO find way to build without persistence service
-//TODO make Git repo
-//TODO Add docker
-//TODO Finish CircleCI
-//TODO Spring Boot
-//TODO Add Ansible
-//TODO grpc
-//TODO countdown latch for test

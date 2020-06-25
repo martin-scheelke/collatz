@@ -2,8 +2,7 @@
 //TODO make Git repo
 //TODO Add docker
 //TODO Finish CircleCI
-//TODO Add Jenkins
-//TODO Do with Spring Boot
+//TODO Spring Boot
 //TODO Add Ansible
-//TODO Do with grpc
-//TODO 
+//TODO grpc
+//TODO countdown latch for test

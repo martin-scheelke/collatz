@@ -2,52 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5ba327f-3a12-48a0-a6c2-7c5575e744c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cats" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDecisions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README_ANSWERS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbscripts/V0__setup.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbscripts/V1__data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intellij-java-google-style.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/calc/Collatz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/database/DBJooqWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/database/DatasourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/RestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/DeleteAllHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/DeleteHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/GetAllHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/GetHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/PutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/PersistentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/task/RunnableCollatzTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/task/RunnablePersistentCollatzTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/collatz/CollatzTail.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/collatz/dotproduct/DotProduct.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/CollatzTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/RestControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/collatz/CollatzTailTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/collatz/dotproduct/DotProductTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README_ANSWERS.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +33,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk-11.0.7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
@@ -114,13 +72,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="61" key="FileChooserDialogImpl" timestamp="1592842141016">
+    <state x="413" y="61" key="FileChooserDialogImpl" timestamp="1592843679468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="61" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592842141016" />
+    <state x="413" y="61" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592843679468" />
     <state x="294" y="145" key="com.intellij.ide.util.TipDialog" timestamp="1592841229516">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="294" y="145" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592841229516" />
+    <state x="289" y="23" width="787" height="682" key="find.popup" timestamp="1593108973825">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="289" y="23" width="787" height="682" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1593108973825" />
   </component>
 </project>

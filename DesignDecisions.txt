@@ -1,17 +1,12 @@
 Explanation of decisions and design
 ===================================
 
-- I focused mainly on the core programming and backend sections (Question 1) as I have little 
-  front-end experience.
-  
+
 - Used Gradle (dependency management, build and test) and a mix of Java and Kotlin for this solution. 
   Java is my most familiar language and I used Kotlin where Java has limitations - for tail-recursion 
   optimisation and for the ZIP stream function.
   
-- Followed a TDD (or close) pattern where tests are written before or during coding.
-
-- I added industrial strength javadoc comments to the Collatz.java and CollatzTail.kt code and 
-  more casual comments elsewhere.
+- Followed Test Driven Development
 
 - Implemented the Collatz series with recursion in Java. This implementation is not
   tail-recursive and is vulnerable to stack overflow. It also has maximum input, output and intermediate 
@@ -33,37 +28,14 @@ Explanation of decisions and design
   without affecting the rest of the implementation.
   
 - I chose the REST Assured test framework for integration testing of the REST API. The syntax is 
-  readable, concise and declarative and the tests can be automated as plain JUnit tests and run 
+  declarative and concise and the tests can be automated as plain JUnit tests and run
   with Gradle.
   
 - Collatz term calculations are delegated to a Thread Pool Executor and I chose a synchronised 
-  Map for caching results as this allows safe multi-threaded access. 
+  Map for caching results as this allows safe multi-threaded access.
   
-- Added collatz.database persistence using a persistent version of the collatz calculation service
+- The service implementation is injected at runtime and accessed via and interface. This is an example
+  of the dependency inversion and dependency injection principles. The service implementation can
+  be selected using a property and be set to use in-memory caching or persistence.
 
-- Postgres Database version management is by flyway - collatz.database access is by jOOQ DSL using
-  a Hikari datasource with a transactional wrapper. I chose jOOQ DSL as it gives typesafe query construction
-  and sometimes allows construction of complex queries more easily than ORM.  
-  
-- The service implementation is injected at runtime and access via and interface. This is and example
-  of the dependency inversion principle. The service implementation can be select using a property 
-  and be set to use in-memory caching or persistence.
-
-- A custom jOOQ transaction wrapper wraps all calculation code and collatz.database code for each persistent
-  service call. To be clear the Collatz calculation code AND the collatz.database call are all wrapped in one
-  transaction. This allows complete rollback and undoing of state over multiple collatz.database calls if needed.
-  
-- Used CircleCI with a docker build for CI/CT integration - very easy to setup...
-
-Further possible improvements
-=============================
-
-- The throughput of Collatz calculation results could potentially be improved by tuning the number of 
-  threads in the Executor Thread Pool. This would be a trade-off in competition with client/server
-  connection/thread resources.
-  
-- The Collatz algorithm itself could be optimised by caching and reusing interim steps. 
-
-- Parameter type validation on the REST API. 
-
-- Gradle collatz.task separation of integration tests.
+- Used CircleCI with a docker build for CI/CT integration.

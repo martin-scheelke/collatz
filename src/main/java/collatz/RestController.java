@@ -1,17 +1,16 @@
-package collatz.restapi;
+package collatz;
 
 import static spark.Spark.delete;
 import static spark.Spark.get;
 import static spark.Spark.put;
 
-import collatz.Util;
-import collatz.restapi.handler.DeleteAllHandler;
-import collatz.restapi.handler.DeleteHandler;
-import collatz.restapi.handler.GetAllHandler;
-import collatz.restapi.handler.GetHandler;
-import collatz.restapi.handler.Handler;
-import collatz.restapi.handler.PutHandler;
-import collatz.restapi.service.Service;
+import collatz.handler.DeleteAllHandler;
+import collatz.handler.DeleteHandler;
+import collatz.handler.GetAllHandler;
+import collatz.handler.GetHandler;
+import collatz.handler.Handler;
+import collatz.handler.PutHandler;
+import collatz.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import spark.Spark;

@@ -1,7 +1,7 @@
-package collatz.restapi.handler;
+package collatz.handler;
 
 import java.math.BigInteger;
-import collatz.restapi.service.Service;
+import collatz.service.Service;
 import org.eclipse.jetty.http.HttpStatus;
 import spark.Request;
 import spark.Response;

@@ -1,14 +1,11 @@
-package collatz.restapi.service;
+package collatz.service;
 
-import collatz.database.DBJooqWrapper;
 import java.math.BigInteger;
 import java.util.Map;
 import java.util.Optional;
 
 public interface Service {
 
-  DBJooqWrapper dbJooqWrapper = new DBJooqWrapper();
-  
   Map<BigInteger, BigInteger> getAllCollatz();
 
   Optional<BigInteger> getCollatz(BigInteger startTerm);

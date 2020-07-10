@@ -6,9 +6,10 @@ import static io.restassured.RestAssured.put;
 //import static collatz.db.Tables.COLLATZ;
 import static org.hamcrest.Matchers.containsString;
 
+import collatz.RestController;
 import collatz.database.DBJooqWrapper;
 import io.restassured.RestAssured;
-import collatz.restapi.handler.Handler;
+import collatz.handler.Handler;
 import org.eclipse.jetty.http.HttpStatus;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

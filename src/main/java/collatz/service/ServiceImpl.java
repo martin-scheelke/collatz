@@ -1,4 +1,4 @@
-package collatz.restapi.service;
+package collatz.service;
 
 import java.math.BigInteger;
 import java.util.Map;

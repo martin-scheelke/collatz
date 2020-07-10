@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.math.BigInteger;
 import java.util.Optional;
-import collatz.restapi.service.Service;
-import collatz.restapi.service.ServiceImpl;
+import collatz.service.Service;
+import collatz.service.ServiceImpl;
 import org.junit.jupiter.api.Test;
 
 /**

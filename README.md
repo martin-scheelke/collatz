@@ -1,8 +1,21 @@
-# Collatz
+# Collatz REST API
 _by Martin Scheelke_
 ---
 &nbsp;
 &nbsp;
+
+A very simple REST API/microservice for asynchronous calculation of Collatz series terms.
+The interface returns immediately when it receives an instruction to calculate a term. The interface
+can then be polled for the completed result.
+ 
+This project demonstrates the following:
+
+- Spark Java - a lightweight, drop-in HTTP server.
+- Dependency injection without using a framework such as Spring
+- Tail recursion optimisation using Kotlin's fatures.
+- Test Driven Development
+- CI/CD with Docker and CircleCI
+- Combination of Kotlin and Java into a single Gradle project.
 
 ## Install and Test Instructions 
 
@@ -29,11 +42,6 @@ _by Martin Scheelke_
   gradle clean
   ```
 
-> - If persistence support is required: Install PostgreSQL v10.3 and start the PostGreSQL service
-> - Set the flyway username and password in build.gradle and initialise the collatz.database:
- ```shell script
-  gradle clean flywayClean flywayMigrate
-  ```
 
 &nbsp;
 
@@ -42,7 +50,7 @@ _by Martin Scheelke_
 &nbsp;
 
 > - Edit the properties file at ./collatz/src/main/resources/.properties:
-> - Specify the service class: Set service.impl=collatz.restapi.service.ServiceImpl
+> - Specify the service class: Set service.impl=collatz.service.ServiceImpl
 
 ```shell script
  gradlew test --info
@@ -52,13 +60,10 @@ _by Martin Scheelke_
 
 &nbsp;
 
-#### Run Unit and Integration Tests using persistence
+#### Run Unit and Integration Tests using Async..
 
 &nbsp;
-> - Edit the properties file at ./collatz/src/main/resources/.properties:
-> - Set username and password for the collatz.database. e.g. postgres.user=postgres,  postgres.pass=
-> - Specify the service class: Set service.impl=collatz.restapi.service.PersistentServiceImpl
-
+> - 
 ```shell script
  gradlew test --info
  ```
@@ -106,4 +111,4 @@ This is only available for in-memory caching as the collatz.database environment
 
 #### Code Style
 
-- Java Coding style is according to http://google.github.io/styleguide/
+- The Java code style is formatted according to http://google.github.io/styleguide/

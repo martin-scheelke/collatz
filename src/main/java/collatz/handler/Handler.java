@@ -1,4 +1,4 @@
-package collatz.restapi.handler;
+package collatz.handler;
 
 public interface Handler {
 

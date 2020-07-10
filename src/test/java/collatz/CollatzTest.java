@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 public class CollatzTest {
 
   @Test
-  public void testCollatzInputOutofRange() throws IllegalArgumentException {
+  public void testCollatzInputOutofRange() {
     assertThrows(IllegalArgumentException.class, () -> Collatz.collatzRecursive(-1));
     assertThrows(IllegalArgumentException.class, () -> Collatz.collatzRecursive(0));
   }
 
   @Test
-  public void testCollatzInterimTermOutofRange() throws IllegalStateException {
+  public void testCollatzInterimTermOutofRange()  {
     assertThrows(IllegalStateException.class, () -> Collatz.collatzRecursive(Long.MAX_VALUE));
   }
 

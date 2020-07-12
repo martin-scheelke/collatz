@@ -20,47 +20,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ba327f-3a12-48a0-a6c2-7c5575e744c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/data/ConcurrentCollatzDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTestConcurrentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cats" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDecisions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDecisions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/calc/Collatz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/database/DBJooqWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/database/DatasourceFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/RestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/DeleteAllHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/handler/DeleteAllHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/DeleteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/handler/DeleteHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/GetAllHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/handler/GetAllHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/GetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/handler/GetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/handler/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/handler/PutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/handler/PutHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/PersistentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/restapi/service/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/service/ServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/service/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/service/ServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/collatz/task/RunnableCollatzTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/task/RunnableCollatzTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/task/RunnablePersistentCollatzTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/collatz/dotproduct/DotProduct.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/collatz/CollatzTail.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/collatz/CollatzTail.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/collatz/CollatzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collatz/CollatzTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/collatz/CollatzTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/collatz/restapi/RestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/RestControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/collatz/dotproduct/DotProductTest.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +79,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -118,15 +111,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="collatz" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="collatz.restapi" />
+      <recent name="collatz.data" />
     </key>
   </component>
   <component name="RunManager">
@@ -198,6 +195,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="354" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1594574525671">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state x="354" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1097.577@0.0.1097.577" timestamp="1594574525671" />
     <state x="304" y="265" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594387746598">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -210,14 +211,15 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="438" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1594387748032" />
-    <state x="387" y="57" key="FileChooserDialogImpl" timestamp="1593466989498">
+    <state x="387" y="57" key="FileChooserDialogImpl" timestamp="1594390011298">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="387" y="57" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593466989498" />
+    <state x="387" y="57" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594390011298" />
     <state x="413" y="61" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593110165191" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1593467003977">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="59" y="0" key="SettingsEditor" timestamp="1594571645516">
+      <screen x="0" y="0" width="1097" height="577" />
     </state>
+    <state x="59" y="0" key="SettingsEditor/0.0.1097.577@0.0.1097.577" timestamp="1594571645516" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1593467003977" />
     <state x="294" y="145" key="com.intellij.ide.util.TipDialog" timestamp="1592841229516">
       <screen x="0" y="0" width="1366" height="728" />
@@ -239,9 +241,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1593518094089" />
-    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup" timestamp="1593466959084">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="255" y="-5" width="672" height="574" key="search.everywhere.popup" timestamp="1594573134656">
+      <screen x="0" y="0" width="1097" height="577" />
     </state>
+    <state x="255" y="-5" width="672" height="574" key="search.everywhere.popup/0.0.1097.577@0.0.1097.577" timestamp="1594573134656" />
     <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1593466959084" />
   </component>
 </project>

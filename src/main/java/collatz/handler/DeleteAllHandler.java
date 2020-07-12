@@ -12,6 +12,7 @@ public class DeleteAllHandler implements Handler {
 
   Service service;
 
+
   public DeleteAllHandler(Service service) {
     this.service = service;
   }

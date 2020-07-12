@@ -11,11 +11,12 @@ can then be polled for the completed result.
 This project demonstrates the following:
 
 - Spark Java - a lightweight, drop-in HTTP server.
-- Dependency injection without using a framework such as Spring
+- Dependency injection without using a framework such as Spring.
 - Tail recursion optimisation using Kotlin's fatures.
-- Test Driven Development
-- CI/CD with Docker and CircleCI
+- Test Driven Development.
+- CI/CD with Docker and CircleCI.
 - Combination of Kotlin and Java into a single Gradle project.
+- REST Assured for declarative, JUnit driven REST interface tests/ 
 
 ## Install and Test Instructions 
 

@@ -2,7 +2,7 @@ package collatz.restapi;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import collatz.data.CollatzDAOImpl;
+import collatz.data.ConcurrentCollatzDAOImpl;
 import collatz.service.Service;
 import collatz.service.ServiceImpl;
 import java.math.BigInteger;
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Integration tests of Service layer
  */
-public class ServiceImplTest {
+public class ServiceImplTestConcurrentDAO {
 
   private static final BigInteger COLLATZ_IN = new BigInteger("3");
   private static final BigInteger COLLATZ_OUT = new BigInteger("7");
@@ -20,14 +20,14 @@ public class ServiceImplTest {
 
   @Test
   public void testCalcNewCollatz() {
-    Service service = new ServiceImpl(new CollatzDAOImpl());
+    Service service = new ServiceImpl(new ConcurrentCollatzDAOImpl());
     Optional<BigInteger> result = service.calcCollatzAsync(COLLATZ_IN);
     assertTrue(result.isEmpty());
   }
 
   @Test
   public void testCalcCompletedCollatz() throws InterruptedException {
-    Service service = new ServiceImpl(new CollatzDAOImpl());
+    Service service = new ServiceImpl(new ConcurrentCollatzDAOImpl());
     service.calcCollatzAsync(COLLATZ_IN);
     Thread.sleep(COLLATZ_WAIT_MS);
     Optional<BigInteger> result = service.calcCollatzAsync(COLLATZ_IN);
@@ -36,7 +36,7 @@ public class ServiceImplTest {
 
   @Test
   public void testCalcCompletedGetCollatz() throws InterruptedException {
-    Service service = new ServiceImpl(new CollatzDAOImpl());
+    Service service = new ServiceImpl(new ConcurrentCollatzDAOImpl());
     service.calcCollatzAsync(COLLATZ_IN);
     Thread.sleep(COLLATZ_WAIT_MS); //If 
     Optional<BigInteger> result = service.getCollatz(COLLATZ_IN);
@@ -45,7 +45,7 @@ public class ServiceImplTest {
 
   @Test
   public void testCalcCompletedDeleteCollatz() throws InterruptedException {
-    Service service = new ServiceImpl(new CollatzDAOImpl());
+    Service service = new ServiceImpl(new ConcurrentCollatzDAOImpl());
     service.calcCollatzAsync(COLLATZ_IN);
 
     Thread.sleep(COLLATZ_WAIT_MS);

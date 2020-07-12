@@ -4,6 +4,7 @@ import static spark.Spark.delete;
 import static spark.Spark.get;
 import static spark.Spark.put;
 
+import collatz.data.CollatzDAO;
 import collatz.handler.DeleteAllHandler;
 import collatz.handler.DeleteHandler;
 import collatz.handler.GetAllHandler;
@@ -11,6 +12,7 @@ import collatz.handler.GetHandler;
 import collatz.handler.Handler;
 import collatz.handler.PutHandler;
 import collatz.service.Service;
+import collatz.service.ServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import spark.Spark;
@@ -21,9 +23,9 @@ import spark.Spark;
  * Usage:
  * <p>
  * GET /collatz/:id      - Return the Collatz step number for start term :id if already calculated
- * PUT /collatz/:id      - Calculate async the Collatz step number for start term :id.
- * Return answer if already calculated.
- * DELETE /collatz/:id   - Delete the Collatz step number for start term :id if already calculated
+ * PUT /collatz/:id      - Calculate async the Collatz step number for start term :id. Return answer
+ * if already calculated. DELETE /collatz/:id   - Delete the Collatz step number for start term :id
+ * if already calculated
  * <p>
  * Note: Exception handling not implemented
  */
@@ -41,9 +43,10 @@ public class RestController {
     Logger log = LoggerFactory.getLogger(RestController.class);
     log.info("Starting Collatz REST service..");
 
-    // Inject the configured Service Implementation:
-    Class serviceImplClass = Class.forName(Util.getProp("service.impl"));
-    Service service = (Service) serviceImplClass.getDeclaredConstructor().newInstance();
+    // Inject the configured DAO Implementation:
+    Class daoImplClass = Class.forName(Util.getProp("dao.impl"));
+    CollatzDAO collatzDAO = (CollatzDAO) daoImplClass.getDeclaredConstructor().newInstance();
+    ServiceImpl service = new ServiceImpl(collatzDAO);
 
     Handler putHandler = new PutHandler(service, log);
     Handler getHandler = new GetHandler(service);

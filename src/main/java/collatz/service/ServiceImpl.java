@@ -1,23 +1,22 @@
 package collatz.service;
 
+import collatz.data.CollatzDAO;
+import collatz.task.RunnableCollatzTask;
 import java.math.BigInteger;
 import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-import collatz.task.RunnableCollatzTask;
 
 /**
  * Service for Collatz series operations
  */
 public class ServiceImpl implements Service {
 
-  ConcurrentHashMap<BigInteger, BigInteger> collatzStore;
   ThreadPoolExecutor executor;
+  CollatzDAO collatzDAO;
 
-  public ServiceImpl() {
-    this.collatzStore = new ConcurrentHashMap<>();
+  public ServiceImpl(CollatzDAO collatzDAO) {
     this.executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
   }
 
@@ -26,40 +25,43 @@ public class ServiceImpl implements Service {
    */
   @Override
   public Optional<BigInteger> calcCollatzAsync(BigInteger startTerm) {
-    if (!collatzStore.containsKey(startTerm)) {
-      RunnableCollatzTask task = new RunnableCollatzTask(startTerm, collatzStore);
+    Optional<Map<BigInteger, BigInteger>> collatzResults = collatzDAO.get();
+    if (collatzResults.isEmpty() || !collatzResults.get().containsKey(startTerm)) {
+      RunnableCollatzTask task = new RunnableCollatzTask(startTerm, collatzDAO);
       executor.submit(task);
       return Optional.empty();
     } else {
-      return Optional.of(collatzStore.get(startTerm));
+      return Optional.of(collatzResults.get().get(startTerm));
     }
   }
 
   @Override
   public Map<BigInteger, BigInteger> getAllCollatz() {
-    return collatzStore;
+    return collatzDAO.get().orElse(null);
   }
 
   @Override
   public Optional<BigInteger> getCollatz(BigInteger startTerm) {
-    if (!collatzStore.containsKey(startTerm)) {
+    Optional<Map<BigInteger, BigInteger>> collatzResults = collatzDAO.get();
+    if (collatzResults.isPresent() && collatzResults.get().containsKey(startTerm)) {
       return Optional.empty();
     } else {
-      return Optional.of(collatzStore.get(startTerm));
+      return Optional.of(collatzResults.get().get(startTerm));
     }
   }
 
   @Override
   public void deleteAllCollatz() {
-    collatzStore.clear();
+    collatzDAO.delete();
   }
 
   @Override
   public boolean deleteCollatz(BigInteger startTerm) {
-    if (!collatzStore.containsKey(startTerm)) {
+    Optional<Map<BigInteger, BigInteger>> collatzResults = collatzDAO.get();
+    if (collatzResults.isPresent() && !collatzResults.get().containsKey(startTerm)) {
       return false;
     } else {
-      collatzStore.remove(startTerm);
+      collatzResults.get().remove(startTerm);
       return true;
     }
   }

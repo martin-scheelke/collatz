@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public interface CollatzDAO {
 
-  Optional<Map<BigInteger, BigInteger>> get();
+  Map<BigInteger, BigInteger> get();
 
   BigInteger get(BigInteger startTerm);
 

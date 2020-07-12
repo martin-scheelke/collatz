@@ -2,7 +2,6 @@ package collatz.data;
 
 import java.math.BigInteger;
 import java.util.Map;
-import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ConcurrentCollatzDAOImpl implements CollatzDAO {
@@ -14,8 +13,8 @@ public class ConcurrentCollatzDAOImpl implements CollatzDAO {
   }
 
   @Override
-  public Optional<Map<BigInteger, BigInteger>> get() {
-    return Optional.of((Map) new ConcurrentHashMap(collatzStore));
+  public Map<BigInteger, BigInteger> get() {
+    return (Map) new ConcurrentHashMap(collatzStore);
   }
 
   @Override

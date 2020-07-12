@@ -13,8 +13,6 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-//import static collatz.db.Tables.COLLATZ;
-
 /**
  * Integration tests for the REST controller
  */
@@ -31,11 +29,6 @@ public class RestControllerTest {
     RestAssured.baseURI = "http://localhost";
     RestAssured.port = 4567;
     Thread.sleep(3000);
-//    new DBJooqWrapper().execute(tx -> {
-//      tx.deleteFrom(COLLATZ)
-    //       .execute();
-    //     return null;
-    //   });
   }
 
   @AfterAll

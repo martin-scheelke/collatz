@@ -1,10 +1,12 @@
 package collatz.handler;
 
+import collatz.RestController;
 import java.math.BigInteger;
 import java.util.Optional;
 import collatz.service.Service;
 import org.eclipse.jetty.http.HttpStatus;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import spark.Request;
 import spark.Response;
 
@@ -16,9 +18,9 @@ public class PutHandler implements Handler {
   Service service;
   Logger log;
 
-  public PutHandler(Service service, Logger log) {
+  public PutHandler(Service service) {
     this.service = service;
-    this.log = log;
+    log = LoggerFactory.getLogger(PutHandler.class);
   }
 
   @Override

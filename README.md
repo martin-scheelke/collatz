@@ -4,7 +4,8 @@ _by Martin Scheelke_
 &nbsp;
 &nbsp;
 
-A very simple REST API/microservice for asynchronous calculation of Collatz series terms.
+A very simple REST API/microservice for asynchronous calculation of Collatz series terms - see 
+[Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 The interface returns immediately when it receives an instruction to calculate a term. The interface
 can then be polled for the completed result.
  

@@ -20,39 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5ba327f-3a12-48a0-a6c2-7c5575e744c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/collatz/data/ConcurrentCollatzDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTestConcurrentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/data/CollatzDAOImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/collatz/data/ConcurrentCollatzDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/collatz/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/data/CollatzDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/data/ConcurrentCollatzDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/data/ConcurrentCollatzDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/handler/PutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/handler/PutHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/collatz/service/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/service/ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collatz/task/RunnableCollatzTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collatz/task/RunnableCollatzTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/collatz/CollatzTail.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/collatz/CollatzTail.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/collatz/CollatzTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/collatz/restapi/RestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/RestControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collatz/service/ServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/collatz/restapi/ServiceImplTestConcurrentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/collatz/service/ServiceImplTestConcurrentDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +59,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -111,9 +106,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -122,30 +118,111 @@
       <recent name="collatz" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="collatz.restapi" />
       <recent name="collatz.data" />
+      <recent name="collatz.restapi" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test" />
-      <module name="collatz.main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.ServiceImplTest.testCalcCompletedCollatz">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="CollatzDAOImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;collatz.data.CollatzDAOImplTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ServiceImplTest.testCalcCompletedCollatz" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;collatz.service.ServiceImplTest.testCalcCompletedCollatz&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ServiceImplTest.testCalcCompletedGetCollatz" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;collatz.service.ServiceImplTest.testCalcCompletedGetCollatz&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ServiceImplTest.testCalcNewCollatz" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;collatz.service.ServiceImplTest.testCalcNewCollatz&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'collatz.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -165,7 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Gradle.ServiceImplTest.testCalcCompletedCollatz" />
+        <item itemvalue="Gradle.ServiceImplTest.testCalcCompletedGetCollatz" />
+        <item itemvalue="Gradle.ServiceImplTest.testCalcNewCollatz" />
+        <item itemvalue="Gradle.Tests in 'collatz.test'" />
+        <item itemvalue="Gradle.CollatzDAOImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +276,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="29" y="0" key="#Project_Structure" timestamp="1594579308388">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state x="29" y="0" key="#Project_Structure/0.0.1097.577@0.0.1097.577" timestamp="1594579308388" />
     <state x="354" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1594574525671">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
@@ -211,11 +296,47 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="438" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1594387748032" />
+    <state x="297" y="123" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1594579144333">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state x="297" y="123" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1097.577@0.0.1097.577" timestamp="1594579144332" />
     <state x="387" y="57" key="FileChooserDialogImpl" timestamp="1594390011298">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="387" y="57" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594390011298" />
     <state x="413" y="61" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593110165191" />
+    <state width="1054" height="84" key="GridCell.Tab.0.bottom" timestamp="1594580188402">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="84" key="GridCell.Tab.0.bottom/0.0.1097.577@0.0.1097.577" timestamp="1594580188402" />
+    <state width="1054" height="84" key="GridCell.Tab.0.center" timestamp="1594580188402">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="84" key="GridCell.Tab.0.center/0.0.1097.577@0.0.1097.577" timestamp="1594580188402" />
+    <state width="1054" height="84" key="GridCell.Tab.0.left" timestamp="1594580188402">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="84" key="GridCell.Tab.0.left/0.0.1097.577@0.0.1097.577" timestamp="1594580188402" />
+    <state width="1054" height="84" key="GridCell.Tab.0.right" timestamp="1594580188402">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="84" key="GridCell.Tab.0.right/0.0.1097.577@0.0.1097.577" timestamp="1594580188402" />
+    <state width="1054" height="35" key="GridCell.Tab.1.bottom" timestamp="1594580100056">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="35" key="GridCell.Tab.1.bottom/0.0.1097.577@0.0.1097.577" timestamp="1594580100056" />
+    <state width="1054" height="35" key="GridCell.Tab.1.center" timestamp="1594580100056">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="35" key="GridCell.Tab.1.center/0.0.1097.577@0.0.1097.577" timestamp="1594580100056" />
+    <state width="1054" height="35" key="GridCell.Tab.1.left" timestamp="1594580100056">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="35" key="GridCell.Tab.1.left/0.0.1097.577@0.0.1097.577" timestamp="1594580100056" />
+    <state width="1054" height="35" key="GridCell.Tab.1.right" timestamp="1594580100056">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state width="1054" height="35" key="GridCell.Tab.1.right/0.0.1097.577@0.0.1097.577" timestamp="1594580100056" />
     <state x="59" y="0" key="SettingsEditor" timestamp="1594571645516">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
@@ -225,9 +346,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="294" y="145" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592841229516" />
-    <state x="289" y="23" width="787" height="682" key="find.popup" timestamp="1593108973825">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="232" y="0" width="633" height="577" key="find.popup" timestamp="1594576474766">
+      <screen x="0" y="0" width="1097" height="577" />
     </state>
+    <state x="232" y="0" width="633" height="577" key="find.popup/0.0.1097.577@0.0.1097.577" timestamp="1594576474766" />
     <state x="289" y="23" width="787" height="682" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1593108973825" />
     <state width="375" height="132" key="javadoc.popup.new" timestamp="1593110356016">
       <screen x="0" y="0" width="1366" height="728" />
@@ -246,5 +368,16 @@
     </state>
     <state x="255" y="-5" width="672" height="574" key="search.everywhere.popup/0.0.1097.577@0.0.1097.577" timestamp="1594573134656" />
     <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1593466959084" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/collatz/task/RunnableCollatzTask.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

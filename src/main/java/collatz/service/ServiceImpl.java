@@ -18,6 +18,7 @@ public class ServiceImpl implements Service {
 
   public ServiceImpl(CollatzDAO collatzDAO) {
     this.executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
+    this.collatzDAO = collatzDAO;
   }
 
   /**
@@ -25,28 +26,28 @@ public class ServiceImpl implements Service {
    */
   @Override
   public Optional<BigInteger> calcCollatzAsync(BigInteger startTerm) {
-    Optional<Map<BigInteger, BigInteger>> collatzResults = collatzDAO.get();
-    if (collatzResults.isEmpty() || !collatzResults.get().containsKey(startTerm)) {
+    Map<BigInteger, BigInteger> collatzResults = collatzDAO.get();
+    if (collatzResults.isEmpty() || !collatzResults.containsKey(startTerm)) {
       RunnableCollatzTask task = new RunnableCollatzTask(startTerm, collatzDAO);
       executor.submit(task);
       return Optional.empty();
     } else {
-      return Optional.of(collatzResults.get().get(startTerm));
+      return Optional.of(collatzResults.get(startTerm));
     }
   }
 
   @Override
   public Map<BigInteger, BigInteger> getAllCollatz() {
-    return collatzDAO.get().orElse(null);
+    return collatzDAO.get();
   }
 
   @Override
   public Optional<BigInteger> getCollatz(BigInteger startTerm) {
-    Optional<Map<BigInteger, BigInteger>> collatzResults = collatzDAO.get();
-    if (collatzResults.isPresent() && collatzResults.get().containsKey(startTerm)) {
+    Map<BigInteger, BigInteger> collatzResults = collatzDAO.get();
+    if (collatzResults.containsKey(startTerm)) {
       return Optional.empty();
     } else {
-      return Optional.of(collatzResults.get().get(startTerm));
+      return Optional.of(collatzResults.get(startTerm));
     }
   }
 
@@ -57,11 +58,11 @@ public class ServiceImpl implements Service {
 
   @Override
   public boolean deleteCollatz(BigInteger startTerm) {
-    Optional<Map<BigInteger, BigInteger>> collatzResults = collatzDAO.get();
-    if (collatzResults.isPresent() && !collatzResults.get().containsKey(startTerm)) {
+    Map<BigInteger, BigInteger> collatzResults = collatzDAO.get();
+    if (!collatzResults.containsKey(startTerm)) {
       return false;
     } else {
-      collatzResults.get().remove(startTerm);
+      collatzResults.remove(startTerm);
       return true;
     }
   }

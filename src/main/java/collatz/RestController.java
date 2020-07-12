@@ -48,7 +48,7 @@ public class RestController {
     CollatzDAO collatzDAO = (CollatzDAO) daoImplClass.getDeclaredConstructor().newInstance();
     ServiceImpl service = new ServiceImpl(collatzDAO);
 
-    Handler putHandler = new PutHandler(service, log);
+    Handler putHandler = new PutHandler(service);
     Handler getHandler = new GetHandler(service);
     Handler getAllHandler = new GetAllHandler(service);
     Handler deleteHandler = new DeleteHandler(service);

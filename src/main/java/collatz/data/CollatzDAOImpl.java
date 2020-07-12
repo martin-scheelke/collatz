@@ -3,7 +3,6 @@ package collatz.data;
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CollatzDAOImpl implements CollatzDAO {
@@ -15,8 +14,8 @@ public class CollatzDAOImpl implements CollatzDAO {
   }
 
   @Override
-  public Optional<Map<BigInteger, BigInteger>> get() {
-    return Optional.of((Map) new ConcurrentHashMap(collatzStore));
+  public Map<BigInteger, BigInteger> get() {
+    return (Map) new ConcurrentHashMap(collatzStore);
   }
 
   @Override
@@ -31,7 +30,7 @@ public class CollatzDAOImpl implements CollatzDAO {
 
   @Override
   public BigInteger get(BigInteger startTerm) {
-    return null;
+    return collatzStore.get(startTerm);
   }
 
   @Override

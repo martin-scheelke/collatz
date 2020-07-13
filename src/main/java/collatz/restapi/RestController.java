@@ -41,28 +41,24 @@ public class RestController {
   public static void start() throws Exception {
     System.setProperty("log4j.configurationFile", "log4j2.xml");
 
-    Logger log = LoggerFactory.getLogger(RestController.class);
+    var log = LoggerFactory.getLogger(RestController.class);
     log.info("Starting Collatz REST service..");
 
     // Inject the configured DAO Implementation:
     Class daoImplClass = Class.forName(Util.getProp("dao.impl"));
-    CollatzDAO collatzDAO = (CollatzDAO) daoImplClass.getDeclaredConstructor().newInstance();
-    ServiceImpl service = new ServiceImpl(collatzDAO);
+    var collatzDAO = (CollatzDAO) daoImplClass.getDeclaredConstructor().newInstance();
+    var service = new ServiceImpl(collatzDAO);
 
-    Handler putHandler = new PutHandler(service);
-    Handler getHandler = new GetHandler(service);
-    Handler getAllHandler = new GetAllHandler(service);
-    Handler deleteHandler = new DeleteHandler(service);
-    Handler deleteAllHandler = new DeleteAllHandler(service);
+    var putHandler = new PutHandler(service);
+    var getHandler = new GetHandler(service);
+    var getAllHandler = new GetAllHandler(service);
+    var deleteHandler = new DeleteHandler(service);
+    var deleteAllHandler = new DeleteAllHandler(service);
 
     put("/collatz/:id", putHandler::handleRequest);
-
     get("/collatz/:id", getHandler::handleRequest);
-
     get("/collatz", getAllHandler::handleRequest);
-
     delete("/collatz/:id", deleteHandler::handleRequest);
-
     delete("/collatz", deleteAllHandler::handleRequest);
   }
 

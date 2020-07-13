@@ -19,8 +19,13 @@ public class CollatzDAOImpl implements CollatzDAO {
   }
 
   @Override
-  public void delete(BigInteger startTerm) {
-    collatzStore.remove(startTerm);
+  public boolean delete(BigInteger startTerm) {
+    if (!collatzStore.containsKey(startTerm)) {
+      return false;
+    } else {
+      collatzStore.remove(startTerm);
+      return true;
+    }
   }
 
   @Override

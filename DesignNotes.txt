@@ -1,22 +1,13 @@
 Explanation of decisions and design
 ===================================
 
-
 - Used Gradle (dependency management, build and test) and a mix of Java and Kotlin for this solution. 
   Java is my most familiar language and I used Kotlin where Java has limitations - for tail-recursion 
   optimisation and for the ZIP stream function.
-  
-- Followed Test Driven Development
-
-- Implemented the Collatz series with recursion in Java. This implementation is not
-  tail-recursive and is vulnerable to stack overflow. It also has maximum input, output and intermediate 
-  term values of Long.MAX_VALUE (2^63-1). 
 
 - Implemented the Collatz series with tail-recursion in Kotlin which optimises tail-recursive functions.
   Used BigInteger for the input, output and intermediate term values. This allows arbitrarily large 
-  series tests without risk of stack overflow or number out of range problems.                
-
-- Dot product implemented and tested in Kotlin making use of ZIP, MAP and REDUCE.
+  series tests without risk of stack overflow or number out of range problems.
 
 - I chose Spark Java (sparkjava.com) as the HTTP server framework for building the REST API Controller. 
   It is a lightweight framework/library which can be dropped into the application. I prefer this over 
@@ -33,9 +24,3 @@ Explanation of decisions and design
   
 - Collatz term calculations are delegated to a Thread Pool Executor and I chose a synchronised 
   Map for caching results as this allows safe multi-threaded access.
-  
-- The service implementation is injected at runtime and accessed via and interface. This is an example
-  of the dependency inversion and dependency injection principles. The service implementation can
-  be selected using a property and be set to use in-memory caching or persistence.
-
-- Used CircleCI with a docker build for CI/CT integration.

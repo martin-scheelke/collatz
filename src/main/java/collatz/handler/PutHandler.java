@@ -1,6 +1,5 @@
 package collatz.handler;
 
-import collatz.RestController;
 import java.math.BigInteger;
 import java.util.Optional;
 import collatz.service.Service;

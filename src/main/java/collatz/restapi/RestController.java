@@ -1,9 +1,10 @@
-package collatz;
+package collatz.restapi;
 
 import static spark.Spark.delete;
 import static spark.Spark.get;
 import static spark.Spark.put;
 
+import collatz.Util;
 import collatz.data.CollatzDAO;
 import collatz.handler.DeleteAllHandler;
 import collatz.handler.DeleteHandler;
@@ -11,7 +12,6 @@ import collatz.handler.GetAllHandler;
 import collatz.handler.GetHandler;
 import collatz.handler.Handler;
 import collatz.handler.PutHandler;
-import collatz.service.Service;
 import collatz.service.ServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,6 +40,7 @@ public class RestController {
    */
   public static void start() throws Exception {
     System.setProperty("log4j.configurationFile", "log4j2.xml");
+
     Logger log = LoggerFactory.getLogger(RestController.class);
     log.info("Starting Collatz REST service..");
 

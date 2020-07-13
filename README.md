@@ -16,6 +16,7 @@ This project demonstrates the following ideas:
 - Kotlin's tail recursion optimisation - Java and Kotlin are combined in single Gradle project.
 - Test Driven Development.
 - CI/CD with Docker and CircleCI.
+- Gson for JSON handling.
 - RESTAssured for declarative, JUnit driven REST interface tests.
 
 ## Install and Test Instructions 

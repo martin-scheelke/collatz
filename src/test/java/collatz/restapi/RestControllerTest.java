@@ -5,7 +5,6 @@ import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.put;
 import static org.hamcrest.Matchers.containsString;
 
-import collatz.RestController;
 import collatz.handler.Handler;
 import io.restassured.RestAssured;
 import org.eclipse.jetty.http.HttpStatus;

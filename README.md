@@ -41,7 +41,7 @@ https://github.com/martin-scheelke/collatz.git
 
 &nbsp;
 
-#### Run unit and integration tests data store access
+#### Run unit and integration tests with non-thread-safe data store access:
 
 &nbsp;
 
@@ -54,7 +54,7 @@ https://github.com/martin-scheelke/collatz.git
 
 &nbsp;
 
-#### Run unit and integration tests with thread safe data store
+#### Run unit and integration tests with thread-safe data store:
 
 
 &nbsp;
@@ -66,11 +66,7 @@ https://github.com/martin-scheelke/collatz.git
  gradlew clean test --info
  ```
 
-&nbsp;+
-> - 
-```shell script
- gradlew clean test --info
- ```
+&nbsp;
 
 > Test outputs can be found at ../collatz/build/reports/tests/test/index.html
 

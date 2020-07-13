@@ -10,7 +10,7 @@ public interface CollatzDAO {
 
   BigInteger get(BigInteger startTerm);
 
-  void delete(BigInteger startTerm);
+  boolean delete(BigInteger startTerm);
 
   void delete();
 

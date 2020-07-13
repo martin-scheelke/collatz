@@ -27,7 +27,7 @@ public class ServiceImpl implements Service {
   @Override
   public Optional<BigInteger> calcCollatzAsync(BigInteger startTerm) {
     Map<BigInteger, BigInteger> collatzResults = collatzDAO.get();
-    if (collatzResults.isEmpty() || !collatzResults.containsKey(startTerm)) {
+    if (!collatzResults.containsKey(startTerm)) {
       RunnableCollatzTask task = new RunnableCollatzTask(startTerm, collatzDAO);
       executor.submit(task);
       return Optional.empty();
@@ -44,11 +44,7 @@ public class ServiceImpl implements Service {
   @Override
   public Optional<BigInteger> getCollatz(BigInteger startTerm) {
     Map<BigInteger, BigInteger> collatzResults = collatzDAO.get();
-    if (collatzResults.containsKey(startTerm)) {
-      return Optional.empty();
-    } else {
-      return Optional.of(collatzResults.get(startTerm));
-    }
+    return Optional.ofNullable(collatzResults.get(startTerm));
   }
 
   @Override
@@ -58,12 +54,6 @@ public class ServiceImpl implements Service {
 
   @Override
   public boolean deleteCollatz(BigInteger startTerm) {
-    Map<BigInteger, BigInteger> collatzResults = collatzDAO.get();
-    if (!collatzResults.containsKey(startTerm)) {
-      return false;
-    } else {
-      collatzResults.remove(startTerm);
-      return true;
-    }
+    return collatzDAO.delete(startTerm);
   }
 }

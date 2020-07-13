@@ -38,7 +38,7 @@ public class ServiceImplTestConcurrentDAO {
   public void testCalcCompletedGetCollatz() throws InterruptedException {
     Service service = new ServiceImpl(new ConcurrentCollatzDAOImpl());
     service.calcCollatzAsync(COLLATZ_IN);
-    Thread.sleep(COLLATZ_WAIT_MS); //If 
+    Thread.sleep(COLLATZ_WAIT_MS);
     Optional<BigInteger> result = service.getCollatz(COLLATZ_IN);
     assertTrue(result.isPresent() && result.get().equals(COLLATZ_OUT));
   }

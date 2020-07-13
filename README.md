@@ -60,8 +60,7 @@ https://github.com/martin-scheelke/collatz.git
 &nbsp;
 > - Edit the properties file at ./collatz/src/main/resources/.properties
 > - Specify the DAO class: Set collatz.data.ConcurrentCollatzDAOImpl 
-
-> - To run the tests using in-memory caching:
+>
 ```shell script
  gradlew clean test --info
  ```

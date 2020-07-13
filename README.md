@@ -15,10 +15,11 @@ This project demonstrates the following ideas:
 - SOLID programming principles.
 - Dependency injection without using a framework such as Spring.
 - Kotlin's tail recursion optimisation - Java and Kotlin are combined in single Gradle project.
-- Test Driven Development.
-- CI/CD with Docker and CircleCI.
+- Simple CI/CD with Docker and CircleCI.
 - Gson for JSON handling.
+- Test Driven Development.
 - RESTAssured for declarative, JUnit driven REST interface tests.
+- Testing with the Mockito framework
 
 ## Install and Test Instructions 
 
@@ -53,11 +54,9 @@ https://github.com/martin-scheelke/collatz.git
 ```shell script
  gradlew clean test --info
  ```
-
 &nbsp;
 
 #### Run unit and integration tests with thread-safe data store:
-
 
 &nbsp;
 > - Edit the properties file at ./collatz/src/main/resources/.properties
@@ -70,7 +69,6 @@ https://github.com/martin-scheelke/collatz.git
 &nbsp;
 
 > Test outputs can be found at ../collatz/build/reports/tests/test/index.html
-
 
 &nbsp;
 

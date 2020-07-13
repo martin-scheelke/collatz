@@ -21,10 +21,12 @@ import spark.Response;
 public class DeleteHandlerTest {
 
   @Test
-  void testHandleDeleteRequest() {
+  void testHandleDeleteRequest() throws InterruptedException {
 
     Service service = new ServiceImpl(new CollatzDAOImpl());
     service.calcCollatzAsync(new BigInteger("3"));
+
+    Thread.sleep(500);
 
     var deleteHandler = new DeleteHandler(service);
 

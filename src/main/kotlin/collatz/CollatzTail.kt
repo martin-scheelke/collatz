@@ -2,6 +2,11 @@ package collatz
 
 import java.math.BigInteger
 
+val ZERO = BigInteger("0");
+val ONE = BigInteger("1");
+val TWO = BigInteger("2");
+val THREE = BigInteger("3");
+
 /**
  * Wrapper method for tail-recursive Collatz conjecture sequence.
  *
@@ -11,7 +16,7 @@ import java.math.BigInteger
  */
 @Throws(IllegalArgumentException::class)
 fun collatzTailRecursive(n: BigInteger): BigInteger {
-    return collatzTailRecursive(n, BigInteger("0"))
+    return collatzTailRecursive(n, ZERO)
 }
 
 /**
@@ -26,22 +31,22 @@ fun collatzTailRecursive(n: BigInteger): BigInteger {
  */
 @Throws(IllegalArgumentException::class)
 private tailrec fun collatzTailRecursive(n: BigInteger, steps: BigInteger): BigInteger {
-    require(n.compareTo(BigInteger("1")) != -1) { "n must be greater than 0" }
+    require(n.compareTo(ONE) != -1) { "n must be greater than 0" }
     val returnVal: BigInteger
     val newSteps: BigInteger
 
-    if (n.compareTo(BigInteger("1")) == 0) {
+    if (n.compareTo(ONE) == 0) {
         return steps
     }
 
-    if (n.mod(BigInteger("2")).compareTo(BigInteger("0")) == 0) {
-        returnVal = n / BigInteger("2")
-        newSteps = steps + BigInteger("1")
+    if (n.mod(TWO).compareTo(ZERO) == 0) {
+        returnVal = n / TWO
+        newSteps = steps + ONE
     } else {
         //Next step will be even so optimise by combining next two steps 
         // c * 3 + 1 is an even number
-        returnVal = (n * BigInteger("3") + BigInteger("1")) / BigInteger("2")
-        newSteps = steps + BigInteger("2")
+        returnVal = (n * THREE + ONE) / TWO
+        newSteps = steps + TWO
     }
     return collatzTailRecursive(returnVal, newSteps)
 }

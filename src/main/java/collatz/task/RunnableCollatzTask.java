@@ -2,20 +2,21 @@ package collatz.task;
 
 import static collatz.CollatzTailKt.collatzTailRecursive;
 
+import collatz.data.CollatzDAO;
 import java.math.BigInteger;
-import java.util.concurrent.ConcurrentMap;
 
 /**
  * Thread for calculating Collatz Series asynchronously
  */
 public class RunnableCollatzTask
-  implements Runnable {
+    implements Runnable {
 
+  CollatzDAO collatzDAO;
   private BigInteger startTerm;
-  private ConcurrentMap<BigInteger, BigInteger> collatzStore;
 
-  public RunnableCollatzTask(BigInteger startTerm, ConcurrentMap<BigInteger, BigInteger> collatzStore) {
-    this.collatzStore = collatzStore;
+  public RunnableCollatzTask(BigInteger startTerm,
+      CollatzDAO collatzDAO) {
+    this.collatzDAO = collatzDAO;
     this.startTerm = startTerm;
   }
 
@@ -25,6 +26,6 @@ public class RunnableCollatzTask
 
   public void run() {
     BigInteger steps = collatzTailRecursive(startTerm);
-    collatzStore.put(startTerm, steps);
+    collatzDAO.save(startTerm, steps);
   }
 }

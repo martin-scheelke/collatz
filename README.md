@@ -12,6 +12,7 @@ result can then be retrieved by polling the interface.
 This project demonstrates the following ideas:
 
 - Spark Java - a lightweight, drop-in HTTP server.
+- SOLID programming principles.
 - Dependency injection without using a framework such as Spring.
 - Kotlin's tail recursion optimisation - Java and Kotlin are combined in single Gradle project.
 - Test Driven Development.

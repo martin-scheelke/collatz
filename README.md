@@ -18,7 +18,7 @@ This project demonstrates the following ideas:
 - Gson for JSON handling.
 - Test Driven Development.
 - RESTAssured for declarative, JUnit driven REST interface tests.
-- Testing with the Mockito framework
+- Mocking with the Mockito framework
 
 ## Install and Test Instructions 
 

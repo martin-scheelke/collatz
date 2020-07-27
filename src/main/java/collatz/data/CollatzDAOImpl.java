@@ -15,7 +15,7 @@ public class CollatzDAOImpl implements CollatzDAO {
 
   @Override
   public Map<BigInteger, BigInteger> get() {
-    return (Map) new ConcurrentHashMap(collatzStore);
+    return (Map) new HashMap(collatzStore);
   }
 
   @Override

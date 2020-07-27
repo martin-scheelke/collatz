@@ -3,8 +3,6 @@ package collatz.service;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import collatz.data.CollatzDAOImpl;
-import collatz.service.Service;
-import collatz.service.ServiceImpl;
 import java.math.BigInteger;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;

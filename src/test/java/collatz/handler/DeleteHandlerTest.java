@@ -17,6 +17,10 @@ import spark.Request;
 import spark.RequestResponseFactory;
 import spark.Response;
 
+/**
+ * Test the Delete Handler using mocks for the HttpServlet Request/Response Pair
+ */
+
 public class DeleteHandlerTest {
 
   @Test

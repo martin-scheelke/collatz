@@ -36,7 +36,7 @@ public class RestController {
   }
 
   /**
-   * Setup the routes - service implementation is specified in properties files and injected
+   * Setup the routes - DAO implementation is specified in properties files and injected
    */
   public static void start() throws Exception {
     System.setProperty("log4j.configurationFile", "log4j2.xml");

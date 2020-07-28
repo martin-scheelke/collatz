@@ -2,7 +2,6 @@ package collatz.data;
 
 import java.math.BigInteger;
 import java.util.Map;
-import java.util.Optional;
 
 public interface CollatzDAO {
 
